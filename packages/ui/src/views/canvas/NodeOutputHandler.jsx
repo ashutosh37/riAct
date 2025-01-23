@@ -78,10 +78,12 @@ const NodeOutputHandler = ({ outputAnchor, data, disabled = false }) => {
                             id={outputAnchor.id}
                             isValidConnection={(connection) => isValidConnection(connection, reactFlowInstance)}
                             style={{
-                                height: 10,
-                                width: 10,
+                                height: 15,
+                                width: 15,
                                 backgroundColor: data.selected ? theme.palette.primary.main : theme.palette.text.secondary,
-                                top: position
+                                top: position,
+                                right: -7,
+                                boxShadow : '0 0 15px 5px rgba(52, 152, 219, 0.8)'
                             }}
                         />
                     </CustomWidthTooltip>

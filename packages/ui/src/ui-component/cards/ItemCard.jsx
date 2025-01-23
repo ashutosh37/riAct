@@ -17,7 +17,7 @@ const CardWrapper = styled(MainCard)(({ theme }) => ({
     cursor: 'pointer',
     '&:hover': {
         background: theme.palette.card.hover,
-        boxShadow: '0 2px 14px 0 rgb(32 40 45 / 20%)'
+        boxShadow: '0 0 30px 15px rgba(185, 220, 243, 0.1)'
     },
     height: '100%',
     minHeight: '160px',
@@ -34,7 +34,7 @@ const ItemCard = ({ data, images, onClick }) => {
     const customization = useSelector((state) => state.customization)
 
     return (
-        <CardWrapper content={false} onClick={onClick} sx={{ border: 1, borderColor: theme.palette.grey[900] + 25, borderRadius: 2 }}>
+        <CardWrapper content={false} onClick={onClick} sx={{ border: 1, borderColor: theme.palette.grey[900] + 25, borderRadius: 0 }}>
             <Box sx={{ height: '100%', p: 2.25 }}>
                 <Grid container justifyContent='space-between' direction='column' sx={{ height: '100%', gap: 3 }}>
                     <Box display='flex' flexDirection='column' sx={{ width: '100%' }}>

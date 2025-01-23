@@ -4,7 +4,7 @@ import ButtonBase from '@mui/material/ButtonBase'
 export const ImageButton = styled(ButtonBase)(({ theme }) => ({
     position: 'relative',
     height: 200,
-    borderRadius: '10px',
+    borderRadius: '0px',
     [theme.breakpoints.down('sm')]: {
         width: '100% !important', // Overrides inline-style
         height: 100

@@ -84,6 +84,7 @@ const Variables = () => {
     const [variableDialogProps, setVariableDialogProps] = useState({})
     const [variables, setVariables] = useState([])
     const [showHowToDialog, setShowHowToDialog] = useState(false)
+    const [showText, setShowText] = useState(false);
 
     const { confirm } = useConfirm()
 
@@ -331,7 +332,25 @@ const Variables = () => {
                                                                 {variable.name}
                                                             </div>
                                                         </StyledTableCell>
-                                                        <StyledTableCell>{variable.value}</StyledTableCell>
+                                                        <StyledTableCell>
+                                                        <Button 
+                                                                onClick={() => setShowText(!showText)} 
+                                                                variant="contained" 
+                                                                color="primary"
+                                                                size="small"
+                                                                sx={{ marginRight: 2 }}
+                                                            >
+                                                                {showText ? 'Hide' : 'Show'}
+                                                            </Button>
+                                                        {showText ? (
+                                                                <span>{variable.value}</span>
+                                                            ) : (
+                                                                <span></span>
+                                                            )}
+
+                                                            
+                                                            
+                                                            </StyledTableCell>
                                                         <StyledTableCell>
                                                             <Chip
                                                                 color={variable.type === 'static' ? 'info' : 'secondary'}

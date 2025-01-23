@@ -449,7 +449,8 @@ const NodeInputHandler = ({
                                 height: 10,
                                 width: 10,
                                 backgroundColor: data.selected ? theme.palette.primary.main : theme.palette.text.secondary,
-                                top: position
+                                top: position,
+                                boxShadow : '0 0 15px 5px rgba(52, 152, 219, 0.8)'
                             }}
                         />
                     </CustomWidthTooltip>
@@ -477,7 +478,8 @@ const NodeInputHandler = ({
                                     height: 10,
                                     width: 10,
                                     backgroundColor: data.selected ? theme.palette.primary.main : theme.palette.text.secondary,
-                                    top: position
+                                    top: position,
+                                    boxShadow : '0 0 15px 5px rgba(52, 152, 219, 0.8)'
                                 }}
                             />
                         </CustomWidthTooltip>

@@ -17,7 +17,7 @@ Search up for any questions in [Q&A section](https://github.com/FlowiseAI/Flowis
 ## 🙌 Share Chatflow
 
 Yes! Sharing how you use Flowise is a way of contribution. Export your chatflow as JSON, attach a screenshot and share it in [Show and Tell section](https://github.com/FlowiseAI/Flowise/discussions/categories/show-and-tell).
-
+pnpm build
 ## 💡 Ideas
 
 Ideas are welcome such as new feature, apps integration, and blockchain networks. Submit in [Ideas section](https://github.com/FlowiseAI/Flowise/discussions/categories/ideas).

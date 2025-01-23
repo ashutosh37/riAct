@@ -375,7 +375,7 @@ const ProfileSection = ({ username, handleLogout }) => {
                                                     maxWidth: 250,
                                                     minWidth: 200,
                                                     backgroundColor: theme.palette.background.paper,
-                                                    borderRadius: '10px',
+                                                    borderRadius: '0px',
                                                     [theme.breakpoints.down('md')]: {
                                                         minWidth: '100%'
                                                     },
