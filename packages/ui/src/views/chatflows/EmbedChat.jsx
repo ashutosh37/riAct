@@ -170,8 +170,8 @@ export const defaultThemeConfig = {
         footer: {
             textColor: '#303235',
             text: 'Powered by',
-            company: 'Flowise',
-            companyLink: 'https://flowiseai.com'
+            company: 'riACT',
+            companyLink: 'https://risystems.com.au'
         }
     }
 }
@@ -361,9 +361,9 @@ const EmbedChat = ({ chatflowid }) => {
                             <div style={{ height: 10 }}></div>
                         </>
                     )}
-                    <CopyBlock theme={atomOneDark} text={getCode(codeLang)} language='javascript' showLineNumbers={false} wrapLines />
+                    <CopyBlock theme={atomOneDark} text={getCodeCustomization(codeLang)} language='javascript' showLineNumbers={false} wrapLines />
 
-                    <CheckboxInput label='Show Embed Chat Config' value={embedChatCheckboxVal} onChange={onCheckBoxEmbedChatChanged} />
+                    {/* <CheckboxInput label='Show Embed Chat Config' value={embedChatCheckboxVal} onChange={onCheckBoxEmbedChatChanged} />
 
                     {embedChatCheckboxVal && (
                         <CopyBlock
@@ -373,7 +373,7 @@ const EmbedChat = ({ chatflowid }) => {
                             showLineNumbers={false}
                             wrapLines
                         />
-                    )}
+                    )} */}
                 </TabPanel>
             ))}
         </>
