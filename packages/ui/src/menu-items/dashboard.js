@@ -23,7 +23,7 @@ const dashboard = {
     children: [
         {
             id: 'chatflows',
-            title: 'Chatflows',
+            title: 'Chats',
             type: 'item',
             url: '/chatflows',
             icon: icons.IconHierarchy,
@@ -31,7 +31,7 @@ const dashboard = {
         },
         {
             id: 'agentflows',
-            title: 'Agentflows',
+            title: 'Agents',
             type: 'item',
             url: '/agentflows',
             icon: icons.IconUsersGroup,
@@ -44,14 +44,6 @@ const dashboard = {
             type: 'item',
             url: '/assistants',
             icon: icons.IconRobot,
-            breadcrumbs: true
-        },
-        {
-            id: 'marketplaces',
-            title: 'Marketplaces',
-            type: 'item',
-            url: '/marketplaces',
-            icon: icons.IconBuildingStore,
             breadcrumbs: true
         },
         {
@@ -92,6 +84,14 @@ const dashboard = {
             type: 'item',
             url: '/document-stores',
             icon: icons.IconFiles,
+            breadcrumbs: true
+        },
+        {
+            id: 'marketplaces',
+            title: 'Marketplaces',
+            type: 'item',
+            url: '/marketplaces',
+            icon: icons.IconBuildingStore,
             breadcrumbs: true
         }
     ]

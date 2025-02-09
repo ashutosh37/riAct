@@ -5,6 +5,10 @@ import { getBaseClasses, getCredentialData, getCredentialParam } from '../../../
 
 const DESC = `A wrapper around Exa Search. Input should be an Exa-optimized query. Output is a JSON array of the query results`
 
+// Define the allowed types and categories
+type SearchType = "auto" | "keyword" | "neural" | undefined;
+type SearchCategory = "company" | "research paper" | "news" | "github" | "tweet" | "pdf" | "personal site" | "linkedin profile" | "financial report" | undefined;
+
 class ExaSearch_Tools implements INode {
     label: string
     name: string
@@ -200,9 +204,9 @@ class ExaSearch_Tools implements INode {
     async init(nodeData: INodeData, _: string, options: ICommonObject): Promise<any> {
         const description = nodeData.inputs?.description as string
         const numResults = nodeData.inputs?.numResults as string
-        const type = nodeData.inputs?.type as string
+        const type = nodeData.inputs?.type as SearchType; // Explicitly type as SearchType
         const useAutoprompt = nodeData.inputs?.useAutoprompt as boolean
-        const category = nodeData.inputs?.category as string
+        const category = nodeData.inputs?.category as SearchCategory; // Explicitly type as SearchCategory
         const includeDomains = nodeData.inputs?.includeDomains as string
         const excludeDomains = nodeData.inputs?.excludeDomains as string
         const startCrawlDate = nodeData.inputs?.startCrawlDate as string

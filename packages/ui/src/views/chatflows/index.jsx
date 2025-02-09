@@ -43,7 +43,7 @@ const Chatflows = () => {
     const [loginDialogProps, setLoginDialogProps] = useState({})
 
     const getAllChatflowsApi = useApi(chatflowsApi.getAllChatflows)
-    const [view, setView] = useState(localStorage.getItem('flowDisplayStyle') || 'card')
+    const [view, setView] = useState(localStorage.getItem('flowDisplayStyle') || 'list')
 
     const handleChange = (event, nextView) => {
         if (nextView === null) return
